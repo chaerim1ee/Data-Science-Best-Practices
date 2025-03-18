@@ -3,12 +3,11 @@ import zipfile
 import pandas as pd
 
 #set directory path
-directory = r'C:/Users/clee1/OneDrive - Fors Marsh/Desktop/FEVS'
+directory = r'your directory'
 
 # Simple example renaming file
-directory = 'C:/Users/clee1/OneDrive - Fors Marsh/Desktop/FEVS'
-old_filename = 'FEVS_2023_PRDF_renamed.csv'
-new_filename = 'FEVS_2023_PRDF.csv'
+old_filename = 'current_file_name.csv'
+new_filename = 'new_file_name.csv'
 
 old_file_path = os.path.join(directory, old_filename)
 new_file_path = os.path.join(directory, new_filename)
