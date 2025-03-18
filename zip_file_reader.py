@@ -97,22 +97,24 @@ output_file = r'C:/Users/clee1/OneDrive - Fors Marsh/Desktop/FEVS/combined_outpu
 # Combine the csv files
 combine_csv_files(csv_dir, output_file)
 
-#Check the total rows of the combined csv file
-df = pd.read_csv('C:/Users/clee1/OneDrive - Fors Marsh/Desktop/FEVS/combined_output.csv')
+##Practice##
 
-#seems like the file is too large to read , other way ?
-csv_file = 'combined_output.csv'
+# #Check the total rows of the combined csv file
+# df = pd.read_csv('C:/Users/clee1/OneDrive - Fors Marsh/Desktop/FEVS/combined_output.csv')
 
-chunk_size = 100000
+# #seems like the file is too large to read , other way ?
+# csv_file = 'combined_output.csv'
 
-chunks = []
+# chunk_size = 100000
 
-for chunk in pd.read_csv(csv_file, chunksize=chunk_size):
-    chunks.append(chunk)
+# chunks = []
 
-combined_df = pd.concat(chunks, ignore_index=True)
+# for chunk in pd.read_csv(csv_file, chunksize=chunk_size):
+#     chunks.append(chunk)
 
-print(f"Total number of rows: {len(combined_df)}")
+# combined_df = pd.concat(chunks, ignore_index=True)
+
+# print(f"Total number of rows: {len(combined_df)}")
 
 
 
